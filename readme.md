@@ -1,7 +1,9 @@
 # Readme 
 
 ## TR
-Bu Python programı, Selenium ve BeautifulSoup4 kütüphanelerini kullanarak geliştirilmiş bir çekiliş botu. Program, YouTube canlı yayınlarının sohbet bölümündeki katılımcıları izleyerek belirli bir kelime içeren mesajları tespit ediyor ve bu katılımcıları bir set içinde saklıyor. İşte programın temel özellikleri:
+Selenium ve BeautifulSoup4 kütüphanelerini kullanarak geliştirilen bir çekiliş botu programı, web tabanlı çekilişlerde otomatik katılım ve kazananın belirlenmesi amacıyla tasarlanmıştır. Bu bot, kullanıcının belirlediği bir YouTube canlı yayınının sohbet bölümündeki katılımcıları izleyerek belirli bir kelime veya ifade içeren mesajları tespit eder ve bu katılımcıları bir set içinde toplar.
+
+Program, Selenium'u kullanarak web tarayıcısını otomatik olarak başlatır, belirtilen YouTube canlı yayınının sohbet bölümündeki mesajları çeker ve BeautifulSoup4 kütüphanesi ile bu mesajları parse eder. Belirli bir kelime veya ifade içeren mesajları bulan program, bu mesajlara ait kullanıcıları bir set içinde saklar. Çekilişin sonunda ise bu set içinden rastgele bir kullanıcıyı seçerek kazananı belirler.
 
 ## Selenium ve BeautifulSoup4 Kullanımı:
 - `Selenium` kullanılarak web tarayıcısı otomatik olarak başlatılır.
@@ -20,14 +22,13 @@ Bu Python programı, Selenium ve BeautifulSoup4 kütüphanelerini kullanarak gel
 ## Otomatik Güncelleme (Opsiyonel):
 - Program, belirli aralıklarla sohbeti kontrol ederek yeni katılımcıları izleyebilir. Bu sayede, çekilişe katılmak isteyen herkesin fırsat eşitliği sağlanır.
 
-Bu çekiliş botu, kullanıcı dostu bir arayüzle çekilişlerin otomatik ve adil bir şekilde yapılmasını sağlar. Programın özelleştirilebilir yapısı, kullanıcılara çeşitli seçenekler sunarak çekiliş deneyimini kişiselleştirmelerine olanak tanır.
 
 ## EN
 This Python program is designed for automated participation and winner selection in web-based raffles using the Selenium and BeautifulSoup4 libraries. The bot monitors participants in the chat section of a user-specified YouTube live stream, detects messages containing specific keywords or expressions, and gathers these participants in a set.
 
 ## Usage of Selenium and BeautifulSoup4:
-- The web browser is automatically launched using Selenium.
-- The BeautifulSoup4 library is employed to parse HTML content.
+- The web browser is automatically launched using 'Selenium'.
+- The 'BeautifulSoup4' library is employed to parse HTML content.
 
 ## Message Filtering:
 - Users can specify a keyword or expression to identify participants in the raffle.
